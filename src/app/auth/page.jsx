@@ -5,7 +5,7 @@ import React from "react";
 const Auth = () => {
   const handleOauth = async (event) => {
     event.preventDefault();
-    window.location.href = `${process.env.NEXT_PUBLIC_BACKEND_URL}/auth/google/callback`;
+    window.location.href = `${process.env.NEXT_PUBLIC_BACKEND_URL}/auth/google`;
   };
 
   return (

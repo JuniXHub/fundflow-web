@@ -1,15 +1,12 @@
+import { User } from "@/generated/graphql";
 import { createSlice } from "@reduxjs/toolkit";
 import type { PayloadAction } from "@reduxjs/toolkit";
+type UserState = User | null;
 
-interface UserState {
-    id?: string,
-}
+const initialState: UserState = null;
 
-const initialState = { id: undefined } as UserState
-
-const counterSlice = createSlice({
-    name: "user",
-    initialState,
-    reducers: {
-    }
-})
+const usersSlice = createSlice({
+  name: "user",
+  initialState,
+  reducers: {},
+});

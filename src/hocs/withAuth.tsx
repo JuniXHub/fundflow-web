@@ -3,6 +3,7 @@
 import { useEffect } from "react";
 import { redirect } from "next/navigation";
 import { getCookie } from "cookies-next";
+import ROUTES from "@/utils/routes";
 
 const withAuth = (WrappedComponent: any) => {
   const AuthComponent = (props: any) => {
@@ -10,7 +11,7 @@ const withAuth = (WrappedComponent: any) => {
 
     useEffect(() => {
       if (!accessToken) {
-        redirect("/auth");
+        redirect(ROUTES.auth);
       }
     }, [accessToken]);
 

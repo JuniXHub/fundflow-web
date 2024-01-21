@@ -1,4 +1,6 @@
-import withAuth from "@/components/withAuth";
+"use client";
+
+import withAuth from "@/hocs/withAuth";
 import React from "react";
 
 const ProtectedPage = () => {

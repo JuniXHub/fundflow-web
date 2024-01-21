@@ -1,0 +1,3 @@
+const checkIfAuthenticated = () => {
+  return false;
+};

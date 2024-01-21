@@ -1,5 +1,3 @@
-"use client";
-
 import withAuth from "@/components/withAuth";
 import React from "react";
 

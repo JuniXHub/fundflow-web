@@ -2,16 +2,17 @@
 
 import { useEffect } from "react";
 import { redirect } from "next/navigation";
+import { getCookie } from "cookies-next";
 
 const withAuth = (WrappedComponent: any) => {
   const AuthComponent = (props: any) => {
-    const isAuthenticated = true;
+    const accessToken = getCookie("access_token");
 
     useEffect(() => {
-      if (!isAuthenticated) {
+      if (!accessToken) {
         redirect("/auth");
       }
-    }, []);
+    }, [accessToken]);
 
     return <WrappedComponent {...props} />;
   };

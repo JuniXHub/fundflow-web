@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { ApolloWrapper } from "@/lib/apollo-wrapper";
 import ReduxProvider from "@/store/provider";
+import { getCookie } from "cookies-next";
 
 const inter = Inter({ subsets: ["latin"] });
 

@@ -7,3 +7,11 @@ export const REFRESH_TOKEN_MUTATION = gql`
     }
   }
 `;
+
+export const USER_LOGOUT = gql`
+  mutation Logout {
+    logout {
+      message
+    }
+  }
+`;

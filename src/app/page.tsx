@@ -1,7 +1,6 @@
 "use client";
 import { GET_HELLO } from "@/graphql/entities/test/getHello";
 import { useQuery } from "@apollo/client";
-import { getCookie } from "cookies-next";
 
 function Home() {
   return (

@@ -1,7 +1,6 @@
 "use client";
 
 import { logout } from "@/actions/auth";
-import withAuth from "@/hocs/withAuth";
 import { useTypedDispatch } from "@/store/store";
 import ROUTES from "@/utils/routes";
 import { useRouter } from "next/navigation";
@@ -31,4 +30,4 @@ const ProtectedPage = () => {
   );
 };
 
-export default withAuth(ProtectedPage);
+export default ProtectedPage;
